@@ -111,17 +111,17 @@ d3.json(earthquakesURL, function(earthquakeData) {
 
     // Retrieve platesURL (Tectonic Plates GeoJSON Data) with D3
     d3.json(platesURL, function(plateData) {
-        // Create a GeoJSON Layer the plateData
+        //Create a GeoJSON Layer the plateData
         L.geoJson(plateData, {
             color: "#DC143C",
             weight: 2
-        // Add plateData to tectonicPlates LayerGroups 
+        //Add plateData to tectonicPlates LayerGroups 
         }).addTo(tectonicPlates);
         // Add tectonicPlates Layer to the Map
         tectonicPlates.addTo(myMap);
     });
 
-    // Set Up Legend
+    //Set Up Legend
     var legend = L.control({ position: "bottomright" });
     legend.onAdd = function() {
         var div = L.DomUtil.create("div", "info legend"), 
@@ -136,6 +136,6 @@ d3.json(earthquakesURL, function(earthquakeData) {
         }
         return div;
     };
-    // Add Legend to the Map
+    //Add Legend to the Map
     legend.addTo(myMap);
 });

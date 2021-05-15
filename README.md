@@ -4,7 +4,6 @@ The web application is deployed at the following link:
    * https://github.com/terrilively/Leaflet-challenge
 
    Technology Stack Used to develop this application:
-     
    *  HTML/CSS/Bootstrap/JavaScript/
    *  GeoJSON
    *  leaflet.js
